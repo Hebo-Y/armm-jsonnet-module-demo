@@ -1,0 +1,24 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "name": {
+      "value": "testip"
+    }, 
+    "instanceCount" : {
+      "value": 2
+    },
+    "supportsMSI" : {
+      "value": "true"
+    },
+    "supportsZones" : {
+      "value": "false"
+    },
+    "userAssignedMSIIdsPerResource" : {
+      "value": ["[resourceId('Microsoft.ManagedIdentity/userAssignedIdentities/','mymsi')]"]
+    },
+    "userAssignedMSIIdsAcrossResources" : {
+      "value": ["mymsi1"]
+    }
+  }
+}

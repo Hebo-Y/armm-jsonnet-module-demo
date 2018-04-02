@@ -1,0 +1,21 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "name": {
+      "value": "testip"
+    }, 
+    "instanceCount" : {
+      "value": 5
+    },
+    "publicIPAllocationMethod" : {
+        "value": "static"
+    },
+    "skuName" : {
+        "value": "standard"
+    }, 
+    "zones": {
+        "value": [1,2]
+    } 
+  }
+}
